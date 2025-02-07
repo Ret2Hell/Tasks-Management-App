@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Trello Clone
 
-## Getting Started
+A simple Trello-like task management application built with Next.js. This project allows users to create new tasks, update their statuses, and easily rearrange them using drag-and-drop functionality—all enhanced with smooth animations and modern UI components.
 
-First, run the development server:
+## Features
+
+- **Task Management:** Add new tasks and update their statuses.
+- **Drag and Drop:** Rearrange tasks and change their status effortlessly using DND Kit.
+- **Smooth Animations:** Enjoy fluid UI transitions with autoAnimate during drag-and-drop or reordering actions.
+- **Modern UI Components:** Built with shadcn components for a sleek and intuitive interface.
+- **Global State Management:** Efficiently manage your app’s state using Zustand.
+
+## Technologies Used
+
+- **Next.js:** A React framework for building server-rendered and statically generated applications.
+- **Zustand:** A lightweight and intuitive state management library.
+- **DND Kit:** A modern toolkit for implementing drag-and-drop interactions.
+- **autoAnimate:** A library that provides automatic animations for adding, removing, and reordering elements.
+- **shadcn:** Used for crafting high-quality UI components.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Ret2Hell/Tasks-Management-App.git
+   cd Tasks-Management-App
+   ```
+
+2.**Install dependencies:**
+
+    ```bash
+
+npm install
+
+````
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Adding Tasks:** Use the provided input field to create a new task.
+- **Updating Status:** Drag tasks between columns to update their status.
+- **Reordering:** Reorder tasks by clicking the move up/down icons.
+- **Deleting Tasks:** Remove tasks by clicking the delete icon.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Acknowledgements
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Special thanks to the developers of [Zustand](https://github.com/pmndrs/zustand), [DND Kit](https://github.com/clauderic/dnd-kit), [autoAnimate](https://github.com/formkit/auto-animate), and [shadcn](https://github.com/shadcn/ui) for their excellent tools and libraries.
+````
