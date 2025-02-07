@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { Status, useTasksStore } from "@/store/useTasksStore";
 import { useDroppable } from "@dnd-kit/core";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Column({
   title,
@@ -40,7 +41,7 @@ export default function Column({
     <section className="h-[600px] flex-1">
       <h2 className="ml-1 font-serif text-2xl font-semibold">{title}</h2>
 
-      <div
+      <ScrollArea
         ref={setNodeRef}
         className="mt-3.5 h-full w-full flex-1 rounded-xl bg-gray-700/50 p-4"
       >
@@ -59,7 +60,7 @@ export default function Column({
             />
           ))}
         </div>
-      </div>
+      </ScrollArea>
     </section>
   );
 }
