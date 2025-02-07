@@ -27,28 +27,25 @@ A simple Trello-like task management application built with Next.js. This projec
    cd Tasks-Management-App
    ```
 
-2.**Install dependencies:**
+2. **Install dependencies:**
 
-    ```bash
-
-npm install
-
-````
+   ```bash
+   npm install
+   ```
 
 3. **Run the development server:**
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 ## Usage
 
-- **Adding Tasks:** Use the provided input field to create a new task.
+- **Adding Tasks:** Use the input field to create a new task.
 - **Updating Status:** Drag tasks between columns to update their status.
-- **Reordering:** Reorder tasks by clicking the move up/down icons.
+- **Reordering:** Reorder tasks by dragging them or using move up/down icons.
 - **Deleting Tasks:** Remove tasks by clicking the delete icon.
 
 ## Acknowledgements
 
 Special thanks to the developers of [Zustand](https://github.com/pmndrs/zustand), [DND Kit](https://github.com/clauderic/dnd-kit), [autoAnimate](https://github.com/formkit/auto-animate), and [shadcn](https://github.com/shadcn/ui) for their excellent tools and libraries.
-````
