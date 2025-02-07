@@ -61,10 +61,10 @@ export default function Task({
         <h3 className="font-medium text-gray-700">{title}</h3>
         <p className="text-sm font-light text-gray-500">{description}</p>
       </div>
-      <div>
+      <div className="flex gap-2">
         <button
           onClick={moveUp}
-          className={cn("cursor-pointer h-5 w-5", {
+          className={cn("cursor-pointer h-6 w-6", {
             "text-blue-400 hover:-translate-y-px": !isFirst,
             "text-gray-500 opacity-40": isFirst,
           })}
@@ -73,8 +73,8 @@ export default function Task({
         </button>
         <button
           onClick={moveDown}
-          className={cn("cursor-pointer h-5 w-5", {
-            "text-blue-400 hover:-translate-y-px": !isLast,
+          className={cn("cursor-pointer h-6 w-6", {
+            "text-blue-400 hover:translate-y-px": !isLast,
             "text-gray-500 opacity-40": isLast,
           })}
         >
@@ -82,7 +82,7 @@ export default function Task({
         </button>
         <button
           onClick={() => removeTask(id)}
-          className="cursor-pointer h-5 w-5 text-gray-500 hover:text-rose-400"
+          className="cursor-pointer h-6 w-6 text-gray-500 hover:text-rose-400 hover:scale-110"
         >
           <IoClose />
         </button>
